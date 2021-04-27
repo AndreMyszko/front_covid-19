@@ -24,8 +24,6 @@
         <b-button class="mr-2" variant="success" @click="successToast">success</b-button>
         <b-button class="mr-2" variant="warning" @click="warningToast">warning</b-button>
         <b-button class="mr-2" variant="danger" @click="errorToast">error</b-button>
-
-
       </b-card-text>
 
 
