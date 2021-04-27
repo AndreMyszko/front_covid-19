@@ -9,11 +9,21 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import VueGoogleCharts from "vue-google-charts";
 import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
+import Swal from 'sweetalert2/dist/sweetalert2'; //Toast*
 
 Vue.use(VueGoogleCharts);
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(VueSweetalert2);
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  timer: 5000,
+  timerProgressBar: true,
+  showConfirmButton: true
+}); 
+window.Toast = Toast;
 
 Vue.config.productionTip = false;
 
