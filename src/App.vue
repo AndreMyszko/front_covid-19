@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+      <Header />
+      <router-view />
+      <Footer />
   </div>
 </template>
+
+<script>
+import Header from "./components/header";
+import Footer from "./components/footer";
+
+export default {
+  name: "App",
+  components: {
+    Header,
+    Footer,
+  },
+};
+</script>
+
 
 <style lang="scss">
 #app {
