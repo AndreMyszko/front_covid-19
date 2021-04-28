@@ -82,14 +82,6 @@
         </b-row>
       </div>
 
-
-
-
-
-
-
-
-
     </b-card>
   </div>   
 </template>
