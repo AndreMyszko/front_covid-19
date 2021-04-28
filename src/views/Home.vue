@@ -26,6 +26,14 @@
         <b-button class="mr-2" variant="danger" @click="errorToast">error</b-button>
       </b-card-text>
 
+      <b-card-text>
+        <h5>Confirm</h5>
+        <b-button class="mr-2" variant="danger" @click="deleteConfirm">
+          <b-icon icon="trash-fill">Trash</b-icon>
+        </b-button>
+      </b-card-text>
+
+
 
     </b-card>
   </div>
@@ -34,6 +42,7 @@
 </template>
 
 <script>
+// import Swal from 'vue-sweetalert2';
 export default {
   name: "Home",
   components: {
@@ -82,9 +91,26 @@ export default {
       window.Toast.fire( "error!", "omg loook aat this due! close me if you want by pressing OK.... \n😭", "error")
     },
 
-
-
-
+    //CONFIRMS
+    deleteConfirm(){
+      this.$swal({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Delete'
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          window.Toast.fire("Deleted","This was deleted", "success");
+        }
+        else{
+          window.Toast.fire("Canceled Operation", "", "info");
+        }
+      });
+    },
   }
 
 };
