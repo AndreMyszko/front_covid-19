@@ -151,7 +151,7 @@ export default {
           });
         }
       }
-      window.Toast.fire("Success",`User "${this.name}" was registred/updated`, "success");
+      window.Toast.fire("Success",`User "${this.name}" was registred/updated!`, "success");
 
       // console.log({
       //   id: this.id,
