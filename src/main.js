@@ -19,9 +19,9 @@ Vue.use(VueSweetalert2);
 const Toast = Swal.mixin({
   toast: true,
   position: "top-end",
-  timer: 5000,
+  timer: 4000,
   timerProgressBar: true,
-  showConfirmButton: true
+  showConfirmButton: false
 }); 
 window.Toast = Toast;
 

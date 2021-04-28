@@ -151,15 +151,16 @@ export default {
           });
         }
       }
+      window.Toast.fire("Success",`User "${this.name}" was registred/updated`, "success");
 
-      console.log({
-        id: this.id,
-        name: this.name,
-        email: this.email,
-        password: this.password,
-        user_role: this.user_role,
-        active: this.active,
-      });
+      // console.log({
+      //   id: this.id,
+      //   name: this.name,
+      //   email: this.email,
+      //   password: this.password,
+      //   user_role: this.user_role,
+      //   active: this.active,
+      // });
     },
   },
 
