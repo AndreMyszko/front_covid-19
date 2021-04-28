@@ -50,19 +50,19 @@ export default {
   data() {
     return {
       chartData: [
-        ["Tile", "Descrition"],
+        ["Tile", "Description"],
         ["val_1", 143479],
         ["val_2", 3956],
         ["val_3", 50000]
 
       ],
       chartData2: [
-        ["Status", "100k habitantes"],
+        ["Status", "Description"],
         ["val_1", 143824],
         ["val_2", 300972]
       ],
       chartData3: [
-        ["Status", "100k habitantes"],
+        ["Status", "Description"],
         ["val_1", 144150],
         ["val_2", 30978]
       ],
@@ -90,6 +90,6 @@ export default {
     color: rgb(255, 255, 255);
 }
 #def{
-    background-image: linear-gradient(45deg, rgb(20, 222, 124) 0%, rgb(20, 222, 124) 21%,rgb(25, 190, 119) 21%, rgb(25, 190, 119) 37%,rgb(30, 158, 113) 37%, rgb(30, 158, 113) 46%,rgb(35, 126, 108) 46%, rgb(35, 126, 108) 53%,rgb(39, 94, 103) 53%, rgb(39, 94, 103) 59%,rgb(44, 62, 97) 59%, rgb(44, 62, 97) 77%,rgb(49, 30, 92) 77%, rgb(49, 30, 92) 100%);
+    background-image: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(37, 56, 222),rgb(96, 189, 244));
 }
 </style>
