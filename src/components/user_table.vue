@@ -2,12 +2,6 @@
   <div id="tblUser" class="container">
     <h1><b-icon icon="people-fill"></b-icon> USERS</h1>
 
-    <!-- MENSAGEM DE RETORNO DE MÉTODO DELETE -->
-    <div v-if="message" class="alert alert-danger">
-      <b-icon icon="info-square-fill"></b-icon>
-      {{ message }}
-    </div>
-
     <!-- Scopo total tabela + stuffs -->
     <div id="tblScope" class="container p-2">
       <!-- Input de busca na tabela user e AddUser-btn -->
@@ -83,7 +77,6 @@ export default {
   data() {
     return {
       users: [],
-      message: null,
       instructor: "user",
       search: "",
     };
@@ -100,11 +93,28 @@ export default {
 
     //OK - funcionando
     deleteUserClick(id) {
-      UserService.deleteUser(this.instructor, id).then((response) => {
-        this.message = `Delete user with ID: ${id} successful`;
-        this.refreshUser();
-        console.log(`delete --> ID:${id}`);
-        return response;
+      this.$swal({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Delete'
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          window.Toast.fire("Deleted",`User with ID: ${id} was deleted`, "success");
+          UserService.deleteUser(this.instructor, id).then((response) => {
+          this.refreshUser();
+          console.log(`delete --> ID:${id}`);
+          return response;
+      });
+
+        }
+        else{
+          window.Toast.fire("Canceled Operation", "", "info");
+        }
       });
     },
 
