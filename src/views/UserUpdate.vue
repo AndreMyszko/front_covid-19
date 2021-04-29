@@ -1,8 +1,8 @@
-lear<template>
+<template>
   <div id="update-user">
-    <h1><b-icon icon="person-lines-fill"></b-icon> Update</h1>
-
     <div id="tblScope" class="container">
+          <h1><b-icon icon="person-lines-fill"></b-icon> Update User</h1>
+
       <form @submit="validateAndSubmit">
         <br />
         <div v-if="errors.length">
