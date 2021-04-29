@@ -1,6 +1,7 @@
 <template>
   <div id="app">
       <Header />
+      <SideBar />
       <router-view />
       <Footer />
   </div>
@@ -9,11 +10,13 @@
 <script>
 import Header from "./components/header";
 import Footer from "./components/footer";
+import SideBar from "./components/sidebar";
 
 export default {
   name: "App",
   components: {
     Header,
+    SideBar,
     Footer,
   },
 };
