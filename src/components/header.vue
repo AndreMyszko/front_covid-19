@@ -1,7 +1,7 @@
 <template>
-  <div id="nav">
+  <div id="nav" class="mt-2 pt-0">
+    <h3>(𝗖͡ ͜𝗥͡ ͜𝗔͡ ͜𝗪͡ ͜𝗟͡ ͜𝗘͡ ͜𝗥͡ ͜)</h3>
     <b-nav tabs align="center">
-      <h3>- COVID -</h3>
       <b-nav-item>
         |
         <router-link to="/">
