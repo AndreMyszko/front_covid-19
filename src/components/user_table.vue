@@ -2,9 +2,7 @@
   <div id="tblUser" class="container">
     <h1><b-icon icon="people-fill"></b-icon> USERS</h1>
 
-    <!-- Scopo total tabela + stuffs -->
     <div id="tblScope" class="container p-2">
-      <!-- Input de busca na tabela user e AddUser-btn -->
       <div class="row mb-2">
         <div class="col-md-6">
           <h3 class="float-left"><b-icon icon="search"></b-icon>...</h3>
@@ -27,7 +25,6 @@
         </div>
       </div>
 
-      <!-- LISTA DE USUÁRIOS (transformar em componente...) -->
       <table class="table text-light">
         <thead>
           <tr>
@@ -36,8 +33,9 @@
             <th>Email</th>
             <!-- <th>Role</th> -->
             <!-- <th>Active</th> -->
-            <th><!--Remove--></th>
-            <th><!--Update--></th>
+            <!--<th>Remove</th>-->
+            <!--<th>Update</th>-->
+            <th>Edit</th>
           </tr>
         </thead>
         <tbody>
@@ -83,15 +81,12 @@ export default {
   },
 
   methods: {
-    //OK - funcionando
     refreshUser() {
       UserService.retriveAllUsers(this.instructor).then((response) => {
         this.users = response.data;
-        //console.log(response.data);
       });
     },
 
-    //OK - funcionando
     deleteUserClick(id) {
       this.$swal({
         title: 'Are you sure?',
@@ -118,13 +113,11 @@ export default {
       });
     },
 
-    //OK - funcionando (retorna o id para pagina update)
     updateUserClick(id) {
       this.$router.push(`/user/${id}`);
       console.log(id);
     },
 
-    //Em construção....
     insertUserClick() {
       this.$router.push(`/user/-1`);
     },
