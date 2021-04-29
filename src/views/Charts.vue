@@ -1,10 +1,11 @@
 <template>
-    <div>
-        asd
+    <div id="def">
+        <h3>Adicionar links para os charts aqui:</h3>
     </div>
 </template>
 
 <script>
+
 export default {
     name: "Charts",
     components:{
@@ -14,5 +15,7 @@ export default {
 </script>
 
 <style scoped>
-
+#def{
+    color: rgb(255, 255, 255);
+}
 </style>
