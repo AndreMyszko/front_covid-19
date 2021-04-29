@@ -20,6 +20,11 @@ const routes = [
     name: "UserUpdate",
     component: () => import("../views/UserUpdate.vue"),
   },
+  {
+    path: "/charts",
+    name: "Charts",
+    component: () => import("../views/Charts.vue"),
+  },
 ];
 
 const router = new VueRouter({

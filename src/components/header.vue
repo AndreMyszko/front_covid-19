@@ -11,11 +11,19 @@
       </b-nav-item>
       <b-nav-item>
         |
+        <router-link to="charts">
+          <b-icon icon="bar-chart-fill"></b-icon> Charts
+        </router-link>
+        |
+      </b-nav-item>
+      <b-nav-item>
+        |
         <router-link to="user">
           <b-icon icon="person-fill"></b-icon> User
         </router-link>
         |
       </b-nav-item>
+
     </b-nav>
   </div>
 </template>
