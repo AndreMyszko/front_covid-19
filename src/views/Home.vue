@@ -22,3 +22,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .home{
+    color: rgb(255,255,255);
+  }
+</style>

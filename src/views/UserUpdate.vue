@@ -1,5 +1,5 @@
 lear<template>
-  <div id="update-user" class="pb-3">
+  <div id="update-user">
     <h1><b-icon icon="person-lines-fill"></b-icon> Update</h1>
 
     <div id="tblScope" class="container">

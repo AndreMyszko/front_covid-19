@@ -27,4 +27,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#nav{
+  color: rgb(255, 255, 255);
+}
+</style>
