@@ -85,6 +85,13 @@ export default {
     };
   },
 
+  head: {
+    title: {
+      inner: 'Update User'
+    },
+  },
+
+
   computed: {
     id() {
       return this.$route.params.id;

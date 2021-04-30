@@ -14,11 +14,19 @@ import BootstrapVue from "../components/exeamples/bootstrap-vue";
 
 export default {
   name: "Home",
+
   components: {
     SweetAlert2,
     VueGoogleCharts,
     BootstrapVue,
   },
+
+  head: {
+    title: {
+      inner: 'Home'
+    },
+  },
+
 };
 </script>
 

@@ -7,7 +7,15 @@
 <script>
 export default {
   name: "Charts",
+
   components: {},
+  
+  head: {
+    title: {
+      inner: 'All Charts'
+    },
+  },
+
 };
 </script>
 

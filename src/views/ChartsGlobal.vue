@@ -5,7 +5,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+  head: {
+    title: {
+      inner: 'Global Chart'
+    },
+  },
+};
 </script>
 
 <style scoped>
