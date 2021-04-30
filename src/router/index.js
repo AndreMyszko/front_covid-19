@@ -27,10 +27,9 @@ const routes = [
   },
   {
     path: "/charts-global",
-    name: "Charts",
+    name: "GlobalCharts",
     component: () => import("../views/ChartsGlobal.vue"),
   },
-
 ];
 
 const router = new VueRouter({

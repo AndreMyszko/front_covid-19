@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-      <Header />
-      <SideBar />
-      <router-view />
-      <Footer />
+    <Header />
+    <SideBar />
+    <router-view />
+    <Footer />
   </div>
 </template>
 
@@ -21,7 +21,6 @@ export default {
   },
 };
 </script>
-
 
 <style lang="scss">
 #app {

@@ -23,7 +23,6 @@
         </router-link>
         |
       </b-nav-item> -->
-
     </b-nav>
   </div>
 </template>
@@ -36,7 +35,7 @@ export default {
 </script>
 
 <style scoped>
-#nav{
+#nav {
   color: rgb(255, 255, 255);
 }
 </style>

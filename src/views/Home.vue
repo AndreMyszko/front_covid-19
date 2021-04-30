@@ -4,14 +4,13 @@
     <SweetAlert2 />
     <VueGoogleCharts />
     <BootstrapVue />
-
   </div>
 </template>
 
 <script>
-import SweetAlert2 from '../components/exeamples/sweetAlert2'
-import VueGoogleCharts from '../components/exeamples/vue-google-charts'
-import BootstrapVue from '../components/exeamples/bootstrap-vue'
+import SweetAlert2 from "../components/exeamples/sweetAlert2";
+import VueGoogleCharts from "../components/exeamples/vue-google-charts";
+import BootstrapVue from "../components/exeamples/bootstrap-vue";
 
 export default {
   name: "Home",
@@ -24,7 +23,7 @@ export default {
 </script>
 
 <style scoped>
-  .home{
-    color: rgb(255,255,255);
-  }
+.home {
+  color: rgb(255, 255, 255);
+}
 </style>
