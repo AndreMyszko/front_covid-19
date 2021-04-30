@@ -1,5 +1,8 @@
 <template>
+<div>
   <sidebar-menu :menu="menu" />
+  <font-awesome-icon :icon="picon" />
+</div>
 </template>
 
 <script>
@@ -15,7 +18,7 @@
                     {
                         href: '/',
                         title: 'Home',
-                        icon: 'fa fa-user'
+                        icon: 'people-fill'
                     },
                     {
                         title: 'Charts',
@@ -23,13 +26,17 @@
                         child: [
                             {
                                 href: '/charts-global',
-                                title: 'Chart Global'
+                                title: 'Global Chart'
+                            },
+                            {
+                                href: '/charts',
+                                title: 'All Charts'
                             },
                         ]
                     },
                     {
                         title: 'Tables',
-                        icon: 'fa fa-user',
+                        icon: 'fas fa-user',
                         child: [
                             {
                                 href: '/user',

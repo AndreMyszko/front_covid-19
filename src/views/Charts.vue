@@ -1,6 +1,6 @@
 <template>
     <div id="def">
-        <h3>Adicionar links para os charts aqui:</h3>
+        <h3>ALL CHARTS</h3>
     </div>
 </template>
 

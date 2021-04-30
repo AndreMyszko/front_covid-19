@@ -2,7 +2,7 @@
   <div id="nav" class="mt-2 pt-0">
     <h3>(𝗖͡ ͜𝗥͡ ͜𝗔͡ ͜𝗪͡ ͜𝗟͡ ͜𝗘͡ ͜𝗥͡ ͜)</h3>
     <b-nav tabs align="center">
-      <b-nav-item>
+      <!-- <b-nav-item>
         |
         <router-link to="/">
           <b-icon icon="house-fill"></b-icon> Home
@@ -22,7 +22,7 @@
           <b-icon icon="person-fill"></b-icon> User
         </router-link>
         |
-      </b-nav-item>
+      </b-nav-item> -->
 
     </b-nav>
   </div>
