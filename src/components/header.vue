@@ -1,6 +1,6 @@
 <template>
   <div id="nav" class="mt-2 pt-0">
-    <h3>(𝗖͡ ͜𝗥͡ ͜𝗔͡ ͜𝗪͡ ͜𝗟͡ ͜𝗘͡ ͜𝗥͡ ͜)</h3>
+    <h1 class="mb-3">(𝗖͡ ͜𝗥͡ ͜𝗔͡ ͜𝗪͡ ͜𝗟͡ ͜𝗘͡ ͜𝗥͡ ͜)</h1>
     <b-nav tabs align="center">
       <!-- <b-nav-item>
         |
