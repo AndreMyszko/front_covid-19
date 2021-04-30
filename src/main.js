@@ -12,7 +12,11 @@ import VueGoogleCharts from "vue-google-charts";
 import VueSweetalert2 from "vue-sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import Swal from "sweetalert2/dist/sweetalert2"; //Toast*
+
 import VueHead from "vue-head";
+
+import VueChartkick from 'vue-chartkick';
+import 'chartkick/chart.js';
 
 import VueSidebarMenu from "vue-sidebar-menu";
 import "vue-sidebar-menu/dist/vue-sidebar-menu.css";
@@ -25,6 +29,7 @@ library.add(faCoffee);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
+Vue.use(VueChartkick);
 Vue.use(FontAwesomeIcon);
 Vue.use(VueHead);
 Vue.use(VueGoogleCharts);
