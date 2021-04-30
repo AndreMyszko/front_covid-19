@@ -1,7 +1,6 @@
 <template>
 <div>
   <sidebar-menu :menu="menu" />
-  <font-awesome-icon :icon="picon" />
 </div>
 </template>
 
