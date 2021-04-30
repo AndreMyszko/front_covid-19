@@ -15,8 +15,8 @@ import Swal from "sweetalert2/dist/sweetalert2"; //Toast*
 
 import VueHead from "vue-head";
 
-import VueChartkick from 'vue-chartkick';
-import 'chartkick/chart.js';
+import VueChartkick from "vue-chartkick";
+import "chartkick/chart.js";
 
 import VueSidebarMenu from "vue-sidebar-menu";
 import "vue-sidebar-menu/dist/vue-sidebar-menu.css";

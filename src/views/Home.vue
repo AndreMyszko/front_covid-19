@@ -23,10 +23,9 @@ export default {
 
   head: {
     title: {
-      inner: 'Home'
+      inner: "Home",
     },
   },
-
 };
 </script>
 

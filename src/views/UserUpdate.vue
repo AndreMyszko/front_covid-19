@@ -87,10 +87,9 @@ export default {
 
   head: {
     title: {
-      inner: 'Update User'
+      inner: "Update User",
     },
   },
-
 
   computed: {
     id() {

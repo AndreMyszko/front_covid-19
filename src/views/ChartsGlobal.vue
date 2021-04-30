@@ -5,18 +5,14 @@
   </div>
 </template>
 
-
 <script>
 export default {
-  components:{
-  },
+  components: {},
 
   head: {
-
     title: {
-      inner: 'Global Chart'
+      inner: "Global Chart",
     },
-
   },
 };
 </script>

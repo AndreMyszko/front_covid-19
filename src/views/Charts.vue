@@ -9,13 +9,12 @@ export default {
   name: "Charts",
 
   components: {},
-  
+
   head: {
     title: {
-      inner: 'All Charts'
+      inner: "All Charts",
     },
   },
-
 };
 </script>
 
