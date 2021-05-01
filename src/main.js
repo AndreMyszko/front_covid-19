@@ -18,6 +18,8 @@ import VueHead from "vue-head";
 import VueChartkick from "vue-chartkick";
 import "chartkick/chart.js";
 
+import LoadScript from 'vue-plugin-load-script';
+
 import VueSidebarMenu from "vue-sidebar-menu";
 import "vue-sidebar-menu/dist/vue-sidebar-menu.css";
 
@@ -29,6 +31,7 @@ library.add(faCoffee);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
+Vue.use(LoadScript);
 Vue.use(VueChartkick);
 Vue.use(FontAwesomeIcon);
 Vue.use(VueHead);
@@ -46,6 +49,33 @@ const Toast = Swal.mixin({
   showConfirmButton: false,
 });
 window.Toast = Toast;
+
+//GOOGLE API KEY
+Vue.loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBIt_QJhQzi_1vi5ALv1csP0cFzC1tSlFM")
+.then(() => {
+  console.log("GoogleMaps APIkey status: OK");
+})
+.catch(() => {
+  console.log("ERRO: algo errado ao tentar carregar GoogleMaps APIkey");
+});
+
+//GOOGLE GEO CHART
+Vue.loadScript("https://www.gstatic.com/charts/loader.js")
+.then(() => {
+  console.log("GStatic status: OK");
+})
+.catch(() => {
+  console.log("ERRO: algo errado ao tentar carregar GStatic");
+});
+
+//GOOGLE API
+Vue.loadScript("https://www.google.com/jsapi")
+.then(() => {
+  console.log("GoogleJsApi status: OK");
+})
+.catch(() => {
+  console.log("ERRO: algo errado ao tentar carregar GoogleJsApi");
+});
 
 Vue.config.productionTip = false;
 
