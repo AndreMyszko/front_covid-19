@@ -1,7 +1,7 @@
 <template>
   <footer class="text-center text-lg-start">
     <div id="footer" class="text-center p-3">
-      © 2021 Copyright:<a class="text-dark" href="#"> COVID opendata</a>
+      © 2021 Copyright:<a class="text-light" href="#"> DynaForm</a>
     </div>
   </footer>
 </template>
@@ -13,4 +13,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+footer {
+  color: rgb(255, 255, 255);
+}
+</style>

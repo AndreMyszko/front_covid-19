@@ -1,14 +1,33 @@
 <template>
   <div class="home">
-    <h1>Aqui estou na home page!</h1>
+    <h1>Bem vindo à home page!</h1>
+    <SweetAlert2 />
+    <BootstrapVue />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import SweetAlert2 from "../components/example/sweetAlert2";
+import BootstrapVue from "../components/example/bootstrap-vue";
 
 export default {
   name: "Home",
-  components: {},
+
+  components: {
+    SweetAlert2,
+    BootstrapVue,
+  },
+
+  head: {
+    title: {
+      inner: "Home",
+    },
+  },
 };
 </script>
+
+<style scoped>
+.home {
+  color: rgb(255, 255, 255);
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
-  <div id="nav">
+  <div id="nav" class="mt-2 pt-0">
+    <h1 class="mb-3">DynaForm Web</h1>
     <b-nav tabs align="center">
-      <h3>- COVID -</h3>
       <b-nav-item>
         |
         <router-link to="/">
@@ -27,4 +27,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#nav {
+  color: rgb(255, 255, 255);
+}
+</style>
