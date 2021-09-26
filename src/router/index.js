@@ -20,16 +20,6 @@ const routes = [
     name: "UserUpdate",
     component: () => import("../views/UserUpdate.vue"),
   },
-  {
-    path: "/charts",
-    name: "Charts",
-    component: () => import("../views/Charts.vue"),
-  },
-  {
-    path: "/charts-global",
-    name: "GlobalCharts",
-    component: () => import("../views/ChartsGlobal.vue"),
-  },
 ];
 
 const router = new VueRouter({

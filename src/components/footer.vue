@@ -1,16 +1,7 @@
 <template>
   <footer class="text-center text-lg-start">
     <div id="footer" class="text-center p-3">
-      <iframe
-        src="https://giphy.com/embed/iiEZmNmK1cZBWWgBKY"
-        width="200"
-        height="200"
-        frameBorder="0"
-        class="giphy-embed"
-        allowFullScreen
-      ></iframe>
-      <br />
-      © 2021 Copyright:<a class="text-light" href="#"> COVID opendata</a>
+      © 2021 Copyright:<a class="text-light" href="#"> DynaForm</a>
     </div>
   </footer>
 </template>

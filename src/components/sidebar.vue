@@ -20,20 +20,6 @@ export default {
           icon: "people-fill",
         },
         {
-          title: "Charts",
-          icon: "fa fa-user",
-          child: [
-            {
-              href: "/charts-global",
-              title: "Global Chart",
-            },
-            {
-              href: "/charts",
-              title: "All Charts",
-            },
-          ],
-        },
-        {
           title: "Tables",
           icon: "fas fa-user",
           child: [
