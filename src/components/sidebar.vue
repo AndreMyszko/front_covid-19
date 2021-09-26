@@ -41,6 +41,11 @@ export default {
               href: "/user",
               title: "Users",
             },
+            {
+              href: "/charts",
+              title: "Covid",
+            },
+
           ],
         },
       ],

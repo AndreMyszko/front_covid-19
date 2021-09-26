@@ -4,6 +4,8 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 
+import { VueCsvImport } from 'vue-csv-import';
+
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
@@ -31,6 +33,7 @@ library.add(faCoffee);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
+Vue.use(VueCsvImport);
 Vue.use(LoadScript);
 Vue.use(VueChartkick);
 Vue.use(FontAwesomeIcon);

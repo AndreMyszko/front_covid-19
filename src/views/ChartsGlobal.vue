@@ -1,6 +1,13 @@
 <template>
   <div id="def">
-    <h3>GOOGLE GEOCHART</h3>
+    
+    <iframe width="1000" 
+		height="525" 
+		src="https://datastudio.google.com/embed/reporting/b55bc8be-a643-4877-a196-ccbae2a4e06b/page/LAvHC" 
+		frameborder="0" 
+		style="border:0" 
+		allowfullscreen></iframe>
+
   </div>
 </template>
 
